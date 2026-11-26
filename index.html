@@ -428,7 +428,7 @@ dialog .x{position:absolute;top:-52px;right:0;width:44px;height:44px;border-radi
       <span class="eyebrow" style="justify-content:flex-start">Contato</span>
       <h2 style="margin-top:14px">Bora fazer uma <span class="script">Resenha</span>?</h2>
       <p class="lead" style="margin-left:0">Conta o que a sua marca precisa e a gente monta a proposta. Resposta em até 1 dia útil.</p>
-      <p class="wa">WhatsApp: <b>(48) 99101-7384</b><br>Instagram: <b>@marcao.floripa</b></p>
+      <p class="wa">WhatsApp: <b>(48) 8804-5664</b><br>Instagram: <b>@marcao.floripa</b></p>
     </div>
     <form class="form" id="form">
       <div class="rowf"><label for="fn">Seu nome<input id="fn" name="nome" autocomplete="name" required></label>
@@ -436,7 +436,7 @@ dialog .x{position:absolute;top:-52px;right:0;width:44px;height:44px;border-radi
       <div class="rowf"><label for="fs">Segmento<select id="fs" name="segmento"><option>Academia e fitness</option><option>Restaurante e bar</option><option>Saúde e estética</option><option>Loja e varejo</option><option>Evento</option><option>Outro</option></select></label>
       <label for="ff">Formato<select id="ff" name="formato"><option>Ainda não sei</option><option>Resenha patrocinada</option><option>Resenha no local</option><option>Cota do podcast</option><option>Evento com o Marcão</option></select></label></div>
       <label for="fm">O que você quer divulgar?<textarea id="fm" name="msg" rows="3"></textarea></label>
-      <a class="btn" id="send" href="https://wa.me/5548991017384" target="_blank" rel="noopener">Chamar no WhatsApp <span class="ar" aria-hidden="true">→</span></a>
+      <a class="btn" id="send" href="https://wa.me/554888045664" target="_blank" rel="noopener">Chamar no WhatsApp <span class="ar" aria-hidden="true">→</span></a>
     </form>
   </div>
 </div></section>
@@ -524,7 +524,7 @@ addEventListener("scroll",onTL,{passive:true});onTL();
 
 /* whatsapp message */
 const f=document.getElementById("form"),send=document.getElementById("send");
-const upd=()=>{const d=new FormData(f);const txt=`Oi Marcão! Sou ${d.get("nome")||"..."}, da ${d.get("empresa")||"..."} (${d.get("segmento")}). Quero uma Resenha. Formato: ${d.get("formato")}. ${d.get("msg")||""}`.trim();send.href="https://wa.me/5548991017384?text="+encodeURIComponent(txt)};
+const upd=()=>{const d=new FormData(f);const txt=`Oi Marcão! Sou ${d.get("nome")||"..."}, da ${d.get("empresa")||"..."} (${d.get("segmento")}). Quero uma Resenha. Formato: ${d.get("formato")}. ${d.get("msg")||""}`.trim();send.href="https://wa.me/554888045664?text="+encodeURIComponent(txt)};
 f.addEventListener("input",upd);f.addEventListener("submit",e=>e.preventDefault());upd();
 }
 
