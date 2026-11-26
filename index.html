@@ -217,6 +217,14 @@ dialog .x{position:absolute;top:-52px;right:0;width:44px;height:44px;border-radi
 
 #send{justify-content:center;padding:6px 56px}#send .ar{position:absolute;right:6px;top:50%;margin-top:-20px}
 /* Podcast / YouTube */
+.spons{margin:26px 0}
+.spons p{margin:0;font-size:17px;color:var(--sub)}.spons p b{color:var(--txt)}
+.spons ul{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:10px}
+.spons li{display:flex;gap:14px;align-items:baseline;padding:14px 18px;border-radius:16px;background:rgba(255,255,255,.035);border:1px solid var(--line)}
+.spons li b{flex:none;min-width:9.5em;font:600 14px/1.3 var(--mono);color:var(--neon)}
+.spons li span{color:var(--sub);font-size:15px;line-height:1.4}
+@media(max-width:560px){.spons li{flex-direction:column;gap:4px}}
+
 .cv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s,transform .6s cubic-bezier(.2,.8,.2,1)}
 .has .cv{opacity:1}.ep .art img.cv{left:0;top:0;width:100%;height:100%;opacity:0}.ep .art.has img.cv{opacity:1}.art.has>span,.art.has>img:not(.cv){display:none}.screen.has .info{display:none}
 .ep:hover .cv{transform:scale(1.06)}
@@ -397,17 +405,18 @@ dialog .x{position:absolute;top:-52px;right:0;width:44px;height:44px;border-radi
       <span class="eyebrow" data-r>Podcast no YouTube</span>
       <h2 data-r>A resenha também <span class="grad">vira episódio</span></h2>
       <p class="lead" data-r>Toda semana o Marcão senta com lutadores, médicos, atletas e gente do fitness de Floripa. São conversas longas, assistidas até na sala de casa, que viram cortes para o Instagram e para os Shorts.</p>
-      <div class="ytn" data-r>
-        <div><b>180</b><span>vídeos publicados no canal</span></div>
-        <div><b>71,8<em> MIL</em></b><span>visualizações no canal</span></div>
-        <div><b>826</b><span>inscritos</span></div>
-        <div><b>36,6<em>%</em></b><span>do tempo assistido foi em TV</span></div>
+      <div class="spons" data-r>
+        <p><b>Seja um patrocinador da Resenha.</b> Sua marca faz parte do programa, do episódio completo aos cortes.</p>
+        <ul>
+          <li><b>No cenário</b><span>Sua marca à vista durante todo o episódio.</span></li>
+          <li><b>Na voz do Marcão</b><span>Chamada na abertura e menção no meio do papo.</span></li>
+          <li><b>Nos cortes</b><span>A marca vai junto para os Reels e Shorts.</span></li>
+        </ul>
       </div>
       <div class="acts" data-r>
         <a class="btn" href="#contato">Patrocinar o podcast <span class="ar" aria-hidden="true">→</span></a>
         <a class="btn glass" href="https://www.youtube.com/@resenhadomarcaofloripa" target="_blank" rel="noopener">Ver o canal <span class="ar" aria-hidden="true">▶</span></a>
       </div>
-      <p class="note" style="text-align:left">Canal @resenhadomarcaofloripa, novembro de 2026. Tempo em TV: YouTube Studio, 28 dias até 18 de outubro.</p>
     </div>
   </div>
   <div class="eps-head"><h3>Últimos <span class="grad">episódios</span></h3>
